@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+    background-color: #808080; 
+    color: #FFD700; 
+	font-size: 23px; 
+}
+
+header {
+    background-color: #333;
+    padding: 20px; 
+}
+
+h1 {
+    color: #FFFFE0; 
+    margin: 0; 
+}
+
+nav {
+    margin-top: 10px; 
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+nav li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: #F0E68C; 
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+	 margin-top: 50px;
+}
+
+#ads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.color-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.ad {
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(33.33% - 300px); 
+    box-sizing: border-box; 
+}
+
+.ad:nth-child(1) {
+    background-color: #2F4F4F;
+}
+
+.ad:nth-child(2) {
+    background-color: #2F4F4F;
+}
+
+.ad:nth-child(3) {
+    background-color: #2F4F4F;
+}
+
+.ad:nth-child(4) {
+    background-color: #2F4F4F;
+}
+
+.ad:nth-child(5) {
+    background-color: #2F4F4F;
+}
+
+.ad:nth-child(6) {
+    background-color: #2F4F4F;
+}
+
+.ad-image {
+    width: 200px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.ad button {
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.ad button:hover {
+    background-color: #218838;
+}
+
+#phone-number {
+    background-color: #2F4F4F; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+#phone-number a {
+    color: #F0E68C; 
+    text-decoration: none; 
+	font-size: 18px;
+}
+
+#phone-number a:hover {
+    text-decoration: underline; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#adForm {
+    display: flex;
+    flex-direction: column; 
+    max-width: 1000px; 
+    margin: 20px auto;
+    padding: 20px; 
+    border: 15px solid #808080; 
+    border-radius: 8px; 
+    background-color: #696969; 
+}
+
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #FFD700; 
+}
+
+input[type="text"],
+input[type="url"] {
+    margin-bottom: 70px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; 
+    color: #FFD700; 
+    background-color: #696969; 
+}
+
+button {
+    padding: 10px; 
+    background-color: #28a745;
+    color: #FFD700; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #218838; 
+}

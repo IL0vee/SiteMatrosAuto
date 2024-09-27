@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>МатросАвто</title>
+</head>
+
+<body>
+    <header> 
+        <h1>МатросАвто</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#offers">Предложения</a></li>
+				<li><a id="addOfferLink" href="javascript:void(0);">Добавить предложение</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <aside> 
+            <h2>Полезная информация</h2>
+            <p>Здесь вы можете найти интересующие вас предложения и купить Б/У автомобиль по самым низким ценам.</p>
+        </aside>
+
+        <article id="about"> 
+            <h2>О нас</h2>
+            <p>Немного информации о нашем сервисе:</p>
+            <ul>
+                <li>Купля/Продажа автомобиля</li>
+                <li>Представление всей необходимой информации о покупаем автомобиле</li>
+                <li>Гарантия безопасности</li>
+                <li>Постоянная проверка всех клиентов</li>
+            </ul>
+            <p>Мы гарантируем высокое качество обслуживания и индивидуальный подход к каждому клиенту.</p>
+        </article>
+             <h2>Предложения:</h2>
+        <section id="ads" class="color-block">
+            <div class="ad">
+                <img src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-xbky-p-bmv-m5-f90-png-4.png" class="ad-image">
+                <div class="ad-details">
+                    <h3>BMW M5 F90</h3>
+                    <div class="price-block">
+                        <p>Цена: 9.000.000 руб.</p>
+                    </div>
+                    <button type="button" onclick="showPhoneNumber('+7 (950) 834-23-19', this)">Купить</button> 
+					<button type="button" onclick="removeAd(this)">Удалить</button> 
+                </div>
+            </div>
+
+            <div class="ad">
+                <img src="https://www.forzafire.com/images/base/cars/2002-nissan-skyline-gt-r-v-spec-ii.png" class="ad-image">
+                <div class="ad-details">
+                    <h3>Nissan Skyline R34</h3>
+                    <div class="price-block">
+                        <p>Цена: 1.500.000 руб.</p>
+                    </div>
+                    <button type="button" onclick="showPhoneNumber('+7 (982) 793-23-12', this)">Купить</button> 
+					<button type="button" onclick="removeAd(this)">Удалить</button> 
+                </div>
+            </div>
+
+            <div class="ad">
+                <img src="https://avatars.mds.yandex.net/i?id=de972083252420b5cc6a4d0204fcc60a_l-5219241-images-thumbs&n=13" class="ad-image">
+                <div class="ad-details">
+                    <h3>BMW M3 GT-R</h3>
+                    <div class="price-block">
+                        <p>Цена: 15.000.000 руб.</p>
+                    </div>
+                    <button type="button" onclick="showPhoneNumber('+7 (950) 821-71-37', this)">Купить</button> 
+					<button type="button" onclick="removeAd(this)">Удалить</button> 
+                </div>
+            </div>
+			<div class="ad">
+                <img src="https://a.d-cd.net/bc44efu-960.jpg" class="ad-image">
+                <div class="ad-details">
+                    <h3>Lada Priora</h3>
+                    <div class="price-block">
+                        <p>Цена: 500.000 руб.</p>
+                    </div>
+                    <button type="button" onclick="showPhoneNumber('+7 (950) 833-19-11', this)">Купить</button> 
+					<button type="button" onclick="removeAd(this)">Удалить</button> 
+                </div>
+            </div>
+
+            <div class="ad">
+                <img src="https://a.d-cd.net/95ip6bhk9ObmD29UvCmmKXIGTZc-1920.jpg" class="ad-image">
+                <div class="ad-details">
+                    <h3>Skoda Oktavia</h3>
+                    <div class="price-block">
+                        <p>Цена: 1.000.000 руб.</p>
+                    </div>
+                    <button type="button" onclick="showPhoneNumber('+7 (982) 145-21-12', this)">Купить</button> 
+					<button type="button" onclick="removeAd(this)">Удалить</button> 
+                </div>
+            </div>
+
+            <div class="ad">
+                <img src="https://a.d-cd.net/8bc914u-1920.jpg" class="ad-image">
+                <div class="ad-details">
+                    <h3>Mercedes-Benz CLC 200</h3>
+                    <div class="price-block">
+                        <p>Цена: 1.300.000 руб.</p>
+                    </div>
+                    <button type="button" onclick="showPhoneNumber('+7 (912) 345-12-30', this)">Купить</button> 
+					<button type="button" onclick="removeAd(this)">Удалить</button> 
+                </div>
+            </div>
+        </section>
+		
+					<div id="phone-number" style="display: none; margin-top: 20px; font-size: 18px;"></div>
+
+         <h2 id="addForm">Добавить новое предложение</h2>
+         <form id="adForm" onsubmit="addNewAd(event)">
+            <label for="carName">Название автомобиля:</label>
+            <input type="text" id="carName" required>
+
+            <label for="carPrice">Цена:</label>
+            <input type="text" id="carPrice" required>
+
+            <label for="carImage">Ссылка на изображение:</label>
+            <input type="url" id="carImage" required>
+
+            <label for="phoneNumber">Номер телефона:</label>
+            <input type="text" id="phoneNumber" required>
+
+            <button type="submit">Добавить автомобиль</button>
+        </form>
+
+    </main>
+
+  <footer> 
+    <p>&copy; 2024 МатросАвто. Все права защищены.</p>
+    <p><a href="privacy-policy.html" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a></p>
+    <p>Контакты: matrosavto@gmail.com | Телефон: +7 (982) 831-91-57</p>
+  </footer> 
+
+    <script src="js/app.js" defer></script>
+</body>
+</html>
