@@ -6,9 +6,55 @@ body {
     background-color: #808080; 
     color: #FFD700; 
 	font-size: 23px; 
+	transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-header {
+header, footer {
+    transition: background-color 0.5s ease;
+}
+.light-theme header, .light-theme footer {
+    background-color: #C0C0C0;
+}
+
+.light-theme {
+    background-color: #ffffff; 
+	color: #FFD700; 
+}
+
+.light-theme header {
+    background-color: #C0C0C0; 
+	padding: 20px;
+}
+
+.light-theme nav a {
+    text-decoration: none; 
+    color: #F0E68C; 
+}
+
+.light-theme footer {
+    background-color: #C0C0C0; 
+    color: #333; 
+    padding: 20px;
+    font-family: Arial, sans-serif;
+	margin-top: 50px;
+}
+
+.light-theme .ad {
+    background-color: #e0e0e0; 
+	padding: 10px;
+    flex-direction: column;
+    border-radius: 5px;
+	width: calc(33.33% - 300px); 
+	box-sizing: border-box; 
+    margin: 15px;
+}
+
+.dark-theme {
+    background-color: #808080; 
+    color: #FFD700; 
+}
+
+.dark-theme header {
     background-color: #333;
     padding: 20px; 
 }
@@ -32,7 +78,7 @@ nav li {
     margin: 0 15px; 
 }
 
-nav a {
+.dark-theme nav a {
     text-decoration: none; 
     color: #F0E68C; 
 }
@@ -41,12 +87,12 @@ nav a:hover {
     text-decoration: underline; 
 }
 
-footer {
+.dark-theme footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     font-family: Arial, sans-serif;
-	 margin-top: 50px;
+	margin-top: 50px;
 }
 
 #ads {
@@ -62,11 +108,18 @@ footer {
     gap: 20px; 
 }
 
-.ad {
-    padding: 10px;
+.dark-theme .ad {
+	padding: 10px;
+    flex-direction: column;
     border-radius: 5px;
-    width: calc(33.33% - 300px); 
-    box-sizing: border-box; 
+	width: calc(33.33% - 300px); 
+	box-sizing: border-box; 
+    margin: 15px;
+}
+
+.ad:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .ad:nth-child(1) {
@@ -96,6 +149,7 @@ footer {
 .ad-image {
     width: 200px;
     height: auto;
+	cursor: pointer;
 }
 
 ul {
@@ -110,10 +164,12 @@ ul {
     padding: 10px 15px; 
     border-radius: 5px; 
     cursor: pointer; 
+	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .ad button:hover {
     background-color: #218838;
+	transform: scale(1.05);
 }
 
 #phone-number {
@@ -167,15 +223,39 @@ input[type="url"] {
 }
 
 button {
-    padding: 10px; 
+    padding: 15px; 
     background-color: #28a745;
     color: #FFD700; 
     border: none; 
     border-radius: 4px; 
     font-size: 16px; 
     cursor: pointer; 
+	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
     background-color: #218838; 
+	transform: scale(1.05);
 }
+
+.theme-toggle-button {
+    cursor: pointer;
+}
+
+.form-toggle-button {
+	padding: 15px; 
+    background-color: #28a745;
+    color: #FFD700; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	width: 400px;
+	display: block; 
+    margin: 0 auto;
+}
+
+
+
+

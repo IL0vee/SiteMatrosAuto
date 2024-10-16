@@ -17,6 +17,7 @@
                 <li><a href="#about">О нас</a></li>
                 <li><a href="#offers">Предложения</a></li>
 				<li><a id="addOfferLink" href="javascript:void(0);">Добавить предложение</a></li>
+				<li><a id="themeToggle" class="theme-toggle-button">Сменить тему</a></li>
             </ul>
         </nav>
     </header>
@@ -40,76 +41,89 @@
         </article>
              <h2>Предложения:</h2>
         <section id="ads" class="color-block">
-            <div class="ad">
-                <img src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-xbky-p-bmv-m5-f90-png-4.png" class="ad-image">
-                <div class="ad-details">
-                    <h3>BMW M5 F90</h3>
-                    <div class="price-block">
-                        <p>Цена: 9.000.000 руб.</p>
-                    </div>
-                    <button type="button" onclick="showPhoneNumber('+7 (950) 834-23-19', this)">Купить</button> 
-					<button type="button" onclick="removeAd(this)">Удалить</button> 
-                </div>
+    <div class="ad">
+        <a href="https://png.klev.club/uploads/posts/2024-04/png-klev-club-xbky-p-bmv-m5-f90-png-4.png" target="_blank">
+            <img src="https://png.klev.club/uploads/posts/2024-04/png-klev-club-xbky-p-bmv-m5-f90-png-4.png" class="ad-image">
+        </a>
+        <div class="ad-details">
+            <h3>BMW M5 F90</h3>
+            <div class="price-block">
+                <p>Цена: 9.000.000 руб.</p>
             </div>
+            <button type="button" onclick="showPhoneNumber('+7 (950) 834-23-19', this)">Купить</button> 
+            <button type="button" onclick="removeAd(this)">Удалить</button> 
+        </div>
+    </div>
 
-            <div class="ad">
-                <img src="https://www.forzafire.com/images/base/cars/2002-nissan-skyline-gt-r-v-spec-ii.png" class="ad-image">
-                <div class="ad-details">
-                    <h3>Nissan Skyline R34</h3>
-                    <div class="price-block">
-                        <p>Цена: 1.500.000 руб.</p>
-                    </div>
-                    <button type="button" onclick="showPhoneNumber('+7 (982) 793-23-12', this)">Купить</button> 
-					<button type="button" onclick="removeAd(this)">Удалить</button> 
-                </div>
+    <div class="ad">
+        <a href="https://www.forzafire.com/images/base/cars/2002-nissan-skyline-gt-r-v-spec-ii.png" target="_blank">
+            <img src="https://www.forzafire.com/images/base/cars/2002-nissan-skyline-gt-r-v-spec-ii.png" class="ad-image">
+        </a>
+        <div class="ad-details">
+            <h3>Nissan Skyline R34</h3>
+            <div class="price-block">
+                <p>Цена: 1.500.000 руб.</p>
             </div>
+            <button type="button" onclick="showPhoneNumber('+7 (982) 793-23-12', this)">Купить</button> 
+            <button type="button" onclick="removeAd(this)">Удалить</button> 
+        </div>
+    </div>
 
-            <div class="ad">
-                <img src="https://avatars.mds.yandex.net/i?id=de972083252420b5cc6a4d0204fcc60a_l-5219241-images-thumbs&n=13" class="ad-image">
-                <div class="ad-details">
-                    <h3>BMW M3 GT-R</h3>
-                    <div class="price-block">
-                        <p>Цена: 15.000.000 руб.</p>
-                    </div>
-                    <button type="button" onclick="showPhoneNumber('+7 (950) 821-71-37', this)">Купить</button> 
-					<button type="button" onclick="removeAd(this)">Удалить</button> 
-                </div>
+    <div class="ad">
+        <a href="https://avatars.mds.yandex.net/i?id=de972083252420b5cc6a4d0204fcc60a_l-5219241-images-thumbs&n=13" target="_blank">
+            <img src="https://avatars.mds.yandex.net/i?id=de972083252420b5cc6a4d0204fcc60a_l-5219241-images-thumbs&n=13" class="ad-image">
+        </a>
+        <div class="ad-details">
+            <h3>BMW M3 GT-R</h3>
+            <div class="price-block">
+                <p>Цена: 15.000.000 руб.</p>
             </div>
-			<div class="ad">
-                <img src="https://a.d-cd.net/bc44efu-960.jpg" class="ad-image">
-                <div class="ad-details">
-                    <h3>Lada Priora</h3>
-                    <div class="price-block">
-                        <p>Цена: 500.000 руб.</p>
-                    </div>
-                    <button type="button" onclick="showPhoneNumber('+7 (950) 833-19-11', this)">Купить</button> 
-					<button type="button" onclick="removeAd(this)">Удалить</button> 
-                </div>
-            </div>
+            <button type="button" onclick="showPhoneNumber('+7 (950) 821-71-37', this)">Купить</button> 
+            <button type="button" onclick="removeAd(this)">Удалить</button> 
+        </div>
+    </div>
 
-            <div class="ad">
-                <img src="https://a.d-cd.net/95ip6bhk9ObmD29UvCmmKXIGTZc-1920.jpg" class="ad-image">
-                <div class="ad-details">
-                    <h3>Skoda Oktavia</h3>
-                    <div class="price-block">
-                        <p>Цена: 1.000.000 руб.</p>
-                    </div>
-                    <button type="button" onclick="showPhoneNumber('+7 (982) 145-21-12', this)">Купить</button> 
-					<button type="button" onclick="removeAd(this)">Удалить</button> 
-                </div>
+    <div class="ad">
+        <a href="https://a.d-cd.net/bc44efu-960.jpg" target="_blank">
+            <img src="https://a.d-cd.net/bc44efu-960.jpg" class="ad-image">
+        </a>
+        <div class="ad-details">
+            <h3>Lada Priora</h3>
+            <div class="price-block">
+                <p>Цена: 500.000 руб.</p>
             </div>
+            <button type="button" onclick="showPhoneNumber('+7 (950) 833-19-11', this)">Купить</button> 
+            <button type="button" onclick="removeAd(this)">Удалить</button> 
+        </div>
+    </div>
 
-            <div class="ad">
-                <img src="https://a.d-cd.net/8bc914u-1920.jpg" class="ad-image">
-                <div class="ad-details">
-                    <h3>Mercedes-Benz CLC 200</h3>
-                    <div class="price-block">
-                        <p>Цена: 1.300.000 руб.</p>
-                    </div>
-                    <button type="button" onclick="showPhoneNumber('+7 (912) 345-12-30', this)">Купить</button> 
-					<button type="button" onclick="removeAd(this)">Удалить</button> 
-                </div>
+    <div class="ad">
+        <a href="https://a.d-cd.net/95ip6bhk9ObmD29UvCmmKXIGTZc-1920.jpg" target="_blank">
+            <img src="https://a.d-cd.net/95ip6bhk9ObmD29UvCmmKXIGTZc-1920.jpg" class="ad-image">
+        </a>
+        <div class="ad-details">
+            <h3>Skoda Oktavia</h3>
+            <div class="price-block">
+                <p>Цена: 1.000.000 руб.</p>
             </div>
+            <button type="button" onclick="showPhoneNumber('+7 (982) 145-21-12', this)">Купить</button> 
+            <button type="button" onclick="removeAd(this)">Удалить</button> 
+        </div>
+    </div>
+
+    <div class="ad">
+        <a href="https://a.d-cd.net/8bc914u-1920.jpg" target="_blank">
+            <img src="https://a.d-cd.net/8bc914u-1920.jpg" class="ad-image">
+        </a>
+        <div class="ad-details">
+            <h3>Mercedes-Benz CLC 200</h3>
+            <div class="price-block">
+                <p>Цена: 1.300.000 руб.</p>
+            </div>
+            <button type="button" onclick="showPhoneNumber('+7 (912) 345-12-30', this)">Купить</button> 
+            <button type="button" onclick="removeAd(this)">Удалить</button> 
+        </div>
+    </div>
         </section>
 		
 					<div id="phone-number" style="display: none; margin-top: 20px; font-size: 18px;"></div>
@@ -128,7 +142,7 @@
             <label for="phoneNumber">Номер телефона:</label>
             <input type="text" id="phoneNumber" required>
 
-            <button type="submit">Добавить автомобиль</button>
+            <button type="submit" class="form-toggle-button">Добавить автомобиль</button>
         </form>
 
     </main>

@@ -76,7 +76,7 @@ function addNewAd(event) {
     newAd.style.backgroundColor = '#2F4F4F'; 
 
     newAd.innerHTML = `
-        <img src="${carImage}" class="ad-image">
+        <img src="${carImage}" class="ad-image" onclick="window.open('${carImage}', '_blank')">
         <div class="ad-details">
             <h3>${carName}</h3>
             <div class="price-block">
@@ -91,7 +91,6 @@ function addNewAd(event) {
     document.getElementById('adForm').reset();
 }
 
-
 function removeAd(button) {
     const adElement = button.closest('.ad');
     adElement.remove();
@@ -99,4 +98,22 @@ function removeAd(button) {
 
 document.getElementById('addOfferLink').addEventListener('click', function() {
     document.getElementById('addForm').scrollIntoView({ behavior: 'smooth' });
+});
+
+const themeToggle = document.getElementById('themeToggle');
+
+let currentTheme = localStorage.getItem('theme') || 'dark'; 
+document.body.classList.add(`${currentTheme}-theme`);
+
+themeToggle.addEventListener('click', () => {
+    if (currentTheme === 'dark') {
+        currentTheme = 'light';
+    } else {
+        currentTheme = 'dark';
+    }
+
+    document.body.className = '';
+    document.body.classList.add(`${currentTheme}-theme`);
+
+    localStorage.setItem('theme', currentTheme);
 });
